@@ -14,3 +14,32 @@ number_index = int(position[1]) - 1
 map[number_index][letter_index] = "X"
 
 print(f"{line1}\n{line2}\n{line3}")
+
+#CE AM FACUT EU
+
+line1 = ["A","️B","️C"]
+line2 = ["A","B","️C"]
+line3 = ["A","B️","C"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input() # Where do you want to put the treasure?
+
+
+print(f"{line1}\n{line2}\n{line3}")
+
+pos1=str(position[0])
+pos2=int(position[1])
+
+nr1=line1.index("A")
+nr2=line2.index("B")
+nr3=line3.index("C")
+
+if pos1 == 'A':
+    map[pos2-1][nr1]='X'
+    print(map)
+elif pos2 == 'B':
+    map[pos2 - 1][nr2] = 'X'
+    print(map)
+else:
+    map[pos2 - 1][nr3] = 'X'
+    print(map)
