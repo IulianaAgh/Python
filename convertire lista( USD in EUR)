@@ -1,0 +1,9 @@
+monthly_spending = [2689.56, 2770.38, 2394.04, 2099.91, 3182.20, 3267.12, 1746.83, 2545.72, 3328.20, 3147.30, 2462.61, 3890.45]
+
+  monthly_spending_eur=[]
+
+for i in range(len(monthly_spending)-1):
+    eur_value=round(monthly_spending[i]*0.88,2)
+    monthly_spending_eur.append(eur_value)
+
+print(monthly_spending_eur)
